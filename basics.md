@@ -49,4 +49,18 @@
 
 1. think of them as a subprojects or toolkits inside the spring framework.
 2. each part in spring contains it's own modules inbuilt .
-3.
+3. each solves a specific problems.
+
+## applications
+
+- pojo based : plain old java object
+- POJO = Plain Old Java Object : a java class with private variables and public getters , setters .
+
+1. why is this used ?
+1. Spring is designed to be non-invasive, meaning it lets you write normal Java classes (POJOs) and still manage them through features like:
+   • Dependency Injection (DI)
+   • AOP (Aspect-Oriented Programming)
+   • ORM (with JPA/Hibernate)
+   \*\* So instead of forcing you to extend framework-specific classes like in other frameworks…
+
+🔁 Spring lets you build apps using POJOs that you annotate, and Spring wires them up behind the scenes. \*\*
