@@ -64,3 +64,9 @@
    \*\* So instead of forcing you to extend framework-specific classes like in other frameworks…
 
 🔁 Spring lets you build apps using POJOs that you annotate, and Spring wires them up behind the scenes. \*\*
+
+---
+
+2. Modular : modular approach .
+3. integration with the existing framework: use of existing frameworks to use .
+4. Testability : Because Spring manages all the setup, and your logic lives in clean little Java classes (POJOs), you can test easily without worrying about real databases, APIs, or other junk.
