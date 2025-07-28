@@ -146,3 +146,25 @@ ApplicationContext (the real MVP)
 | `@SpringBootApplication`   | Combination of `@Configuration`, `@EnableAutoConfiguration`, and `@ComponentScan` | `@SpringBootApplication`                                  |
 
 ---
+
+## Spring Architecture
+
+```text
++----------------------------------------------------------+
+|                  Spring Application                      |
++----------------------------------------------------------+
+|     Spring AOP     |    Spring ORM    |   Spring Web     |
++----------------------------------------------------------+
+|        Spring Context (ApplicationContext)               |
++----------------------------------------------------------+
+|          Spring Core Container (Beans, Core, EL, Context)|
++----------------------------------------------------------+
+|                    Java SE / EE APIs                     |
++----------------------------------------------------------+
+```
+
+- Expression Language (SpEL) : SPRING EXPRESSION LANGUAGE>
+  ` Allows querying and manipulating objects at runtime (like ${} and #{} expressions).`
+
+- conclusion on architectural principles followed by spring .
+  `Overall, the Spring framework architecture is based on the principles of modularity, separation of concerns, and flexibility, providing developers with a powerful set of tools to build robust, scalable, and maintainable enterprise applications. The framework's modular architecture allows developers to select only the necessary modules for their specific needs, reducing unnecessary overhead and complexity in the application. Additionally, the Spring framework's flexible configuration model allows developers to configure the application using various approaches, such as XML-based configuration, Java-based configuration, and annotation-based configuration.`
