@@ -5,7 +5,7 @@
 3. `Spring boot is a module of the Spring framework' .
 4. Spring framework --> then SpringBoot.
 
-# Spring : lightweight , open source, also called a framework of frameworks.
+# Spring : lightweight , open source, also called a `framework of frameworks`.
 
 1. Spring Framework
 
@@ -57,7 +57,7 @@
 - POJO = Plain Old Java Object : a java class with private variables and public getters , setters .
 
 1. why is this used ?
-1. Spring is designed to be non-invasive, meaning it lets you write normal Java classes (POJOs) and still manage them through features like:
+1. Spring is designed to be `non-invasive`, meaning it lets you write normal Java classes (POJOs) and still manage them through features like:
    • Dependency Injection (DI)
    • AOP (Aspect-Oriented Programming)
    • ORM (with JPA/Hibernate)
