@@ -42,3 +42,7 @@ The key features of IoC Container are listed below
 5.  getting those from application context container using `applicationContext.getBean()`.
 6.  USing java based configuration : via `AppConfig` , `@Bean`.
     1. In this we use `AnnotationConfigAppApplicationContext()` ,`context.getBean()`.
+
+7.  annotations
+8.  Learnt `@Configuration` , `@Bean` , `ComponentScan(basepackages=)`, `Component`, `Primary`, `Qualifier`,`explicit bean names`.
+9.  how to resolve `NoUniqueBeanException`.

@@ -34,3 +34,4 @@
 ## important point : applicationCOntext ----> implements BeanFactory(parent)
 
 1. so application context supports annotations but not beanfactory so it uses `classpathxmlapplicationContext`.
+2. What if You Used BeanFactory? : `This will work only for XML-based configuration, and it has no idea what to do with annotations. It’ll be like:`.
