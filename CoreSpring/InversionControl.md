@@ -32,3 +32,13 @@ The key features of IoC Container are listed below
 
 - used `@configuration` class to define the beans, it's like <u style="color:red" >`treat this class like xml file but in java`. </u>
   <br>
+
+### topics understood in lecture :
+
+1.  Spring IOC
+2.  IOC Container.
+3.  Loose Coupling importance via Interface example.
+4.  Creating Beans using traditional XML method using pom class and `ClassPathXmlApplicationContext()`.
+5.  getting those from application context container using `applicationContext.getBean()`.
+6.  USing java based configuration : via `AppConfig` , `@Bean`.
+    1. In this we use `AnnotationConfigAppApplicationContext()` ,`context.getBean()`.
