@@ -22,3 +22,11 @@
 3. methods for accessing application components.
 4. internilization.
 5. loading in a generic fashion.
+
+## implementation classes.
+
+1. annotationConfigapplicationcontext container.
+2. annotationconfigwebapplicationcontext.
+3. xmlwebapplicationcontext.
+4. filesystemxmlapplicationcontext.
+5. classpathXMLapplicationcontet.
