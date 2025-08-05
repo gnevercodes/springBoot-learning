@@ -11,6 +11,10 @@
 `maven validate` looks at pom.xml and checks is a valid xml maven project and reports it.
 `mvn clean` : deletes the target folder.
 `mvn compile` : compiles the classes and puts them in target folder . clean deletes it while this does this .
+`mvn test` or `mvn compile test` or `mvnw test`. basically is the same and works on testing.
+`mvn compile test`: compiles all the src folders and then will have a look in the test folder.
+` mvn clean compile test package`. all in one command line.
+`mvn install` install and create a package in the maven repository.
 
 ### Pom xml file :
 
