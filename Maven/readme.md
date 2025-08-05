@@ -29,6 +29,7 @@
       <groupId>
       <artifactId>
       <version>
+      <parent>
       <modules>
       <scope> // for testing , main , compile time
    </dependency>
@@ -50,3 +51,9 @@
 3. snapshot version mean's its a work in progress.
 4. change version in dependency and it changes it
 5. use intellJ builin dependency search.
+
+### parent module and child modules.
+
+1. so you can different modules with different xml files over there.
+2. but common ones can be put in the parent.xml pom file and be reused.
+   `multi module maven project`.
