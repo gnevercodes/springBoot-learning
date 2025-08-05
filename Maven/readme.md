@@ -10,6 +10,7 @@
 
 `maven validate` looks at pom.xml and checks is a valid xml maven project and reports it.
 `mvn clean` : deletes the target folder.
+`mvn compile` : compiles the classes and puts them in target folder . clean deletes it while this does this .
 
 ### Pom xml file :
 
