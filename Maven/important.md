@@ -355,3 +355,19 @@
 5. **Plugin Management**: Centralized plugin versions
 6. **Repository Management**: Custom artifact sources
 7. **Reporting**: Automated documentation generation
+
+```md
+<project>
+  ├─ <modelVersion>
+  ├─ <groupId>
+  ├─ <artifactId>
+  ├─ <version>
+  ├─ <packaging> (optional, defaults to "jar")
+  ├─ <name> (optional)
+  ├─ <properties> (optional, e.g., for versions)
+  ├─ <dependencies>
+  ├─ <build>
+  │    └─ <plugins> (like maven-compiler-plugin)
+  └─ <profiles> (optional)
+</project>
+```
