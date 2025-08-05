@@ -371,3 +371,13 @@
   └─ <profiles> (optional)
 </project>
 ```
+
+### plugins in maven:
+
+| Feature      | Dependencies                 | Plugins                     |
+| ------------ | ---------------------------- | --------------------------- |
+| **Purpose**  | Adds external libraries      | Adds tools to perform tasks |
+| **Used In**  | `<dependencies>` tag         | `<build><plugins>` section  |
+| **Examples** | Spring Boot, MySQL Connector | Compiler, Surefire, Shade   |
+
+> While dependencies bring libraries (JARs) into your project (e.g., Spring, Jackson, Hibernate), plugins are tools that allow Maven to do things during the build process — like compiling code, packaging it into a JAR, running tests, creating documentation, etc.
