@@ -1,4 +1,4 @@
-# Maven
+# Maven `pom.xml file`
 
 ## Project based learning:
 
@@ -29,6 +29,7 @@
       <groupId>
       <artifactId>
       <version>
+      <modules>
       <scope> // for testing , main , compile time
    </dependency>
    ```
