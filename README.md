@@ -43,3 +43,25 @@ spring-tutorial/ # actual project flow in every springboot application.
 ├── pom.xml                           # Maven build file
 ├── README.md
 ```
+---
+
+## ⚙️ Prerequisites
+
+- Java 8+
+- Maven
+- IDE (IntelliJ IDEA / Eclipse / VS Code)
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/spring-tutorial.git
+   cd spring-tutorial
+   ```
+
+2. Compile and run:
+```bash
+mvn clean install
+```
