@@ -35,3 +35,5 @@ To create a custom scope, we need to implement the org.springframework.beans.fac
 - String getConversationId(): Returns a unique identifier for the current scope (e.g., thread ID, session ID).
 
 ---
+
+> these methods are a bit tough but we can only learn when we are using those with customConfigurer.
