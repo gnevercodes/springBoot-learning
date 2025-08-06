@@ -1,4 +1,4 @@
-# 🌱 Spring Framework Tutorial – From Basics to Real-World Ready
+# 🌱 Spring Framework Tutorial 
 
 Welcome to my Spring Framework learning journey!
 
@@ -32,3 +32,14 @@ This project focuses on mastering the Spring Core module with real code examples
 ---
 
 ## 📁 Project Structure
+```
+spring-tutorial/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/ganesh/spring/    # Core Java logic
+│   │   └── resources/
+│   │       └── beans.xml             # XML configs
+├── pom.xml                           # Maven build file
+├── README.md
+```
