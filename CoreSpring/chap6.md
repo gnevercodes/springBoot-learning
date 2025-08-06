@@ -29,3 +29,31 @@ Spring provides three ways to implement the life cycle of a bean.
           init-method="init" destroy-method="destroy"/>
 </beans>
 ```
+
+2. Using Programmatic Approach (Interface)
+   > To provide the facility to the created bean to invoke custom init() method on the startup of a spring container and to invoke the custom destroy() method on closing the container, we need to implement our bean with two interfaces.
+
+> so here we need to implement two predefined methods :
+> `override their methods afterPropertiesSet() and destroy() method`
+
+```java
+package beans;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class HelloWorld implements InitializingBean,DisposableBean {
+
+	@Override
+	public void afterPropertiesSet() throws Exception
+	{
+		System.out.println("Bean HelloWorld has been "	+ "instantiated and I'm the " + "init() method");
+	}
+
+	@Override
+	public void destroy() throws Exception
+	{
+		System.out.println("Container has been closed "+ "and I'm the destroy() method");
+	}
+}
+```
