@@ -63,5 +63,9 @@ spring-tutorial/ # actual project flow in every springboot application.
 
 2. Compile and run:
 ```bash
-mvn clean install
+mvn clean install validate test package
 ```
+3. or you can use maven wrapper.
+```bash
+./mvnw clean install
+``` 
