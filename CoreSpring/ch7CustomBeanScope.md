@@ -17,3 +17,21 @@ The Spring framework provides five scopes for a bean. We can use three of them o
 5. Global-Session: Scopes a single bean definition to the lifecycle of a global HTTP Session. It is also only valid in the context of a web-aware Spring ApplicationContext.
 
 ---
+
+Why Custom Scopes?
+
+Spring scopes are powerful, but they may not always fit our application needs. For example:
+
+- In a multi-tenant system, we might want a separate instance of a bean for each tenant.
+- In a thread-based application, we might need a bean that is unique to each thread.
+
+## Understanding the Scope Interface
+
+To create a custom scope, we need to implement the org.springframework.beans.factory.config.Scope interface. This interface defines four methods:
+
+- Object get(String name, ObjectFactory<?> objectFactory): Retrieves an object from the scope. If the object doesn’t exist, it creates one using the ObjectFactory.
+- Object remove(String name): Removes an Object from the scope.
+- void registerDestructionCallback(String name, Runnable destructionCallback): Registers a callback to be executed when the object is destroyed or the scope ends.
+- String getConversationId(): Returns a unique identifier for the current scope (e.g., thread ID, session ID).
+
+---
