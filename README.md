@@ -33,7 +33,7 @@ This project focuses on mastering the Spring Core module with real code examples
 
 ## 📁 Project Structure
 ```
-spring-tutorial/
+spring-tutorial/ # actual project flow in every springboot application. 
 ├── src/
 │   ├── main/
 │   │   ├── java/
