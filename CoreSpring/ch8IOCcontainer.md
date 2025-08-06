@@ -14,3 +14,18 @@ ApplicationContext Container
 This is an advanced container built on top of the BeanFactory.
 It includes all the features of BeanFactory and adds extra functionalities such as internationalization, event propagation, and integration with other Spring modules.
 In this, beans are created and configured at startup.
+
+## Spring IOC Container
+
+Spring IoC is a design principle where the control of object creation and lifecycle is transferred from the developer to the framework. The IoC container is responsible for:
+
+Creating objects (Beans)
+Configuring dependencies via Dependency Injection (DI)
+Managing the entire lifecycle of beans, from instantiation to destruction
+Reading configuration metadata (XML, Java Config, or Annotations)
+
+## Working of IoC Container
+
+- The container reads configuration metadata (XML, Java annotations, or Java-based configuration) to understand how beans should be creates and wired together.
+- It uses Dependency Injection (DI) to inject dependencies into beans at runtime.
+- The container manages the entire lifecycle of beans, from instantiation to destruction.
