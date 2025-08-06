@@ -57,3 +57,37 @@ public class HelloWorld implements InitializingBean,DisposableBean {
 	}
 }
 ```
+
+3. using annotations.  
+   **To provide the facility to the created bean to invoke custom init() method on the startup of a spring container and to invoke the custom destroy() method on closing the container, we need to annotate init() method by @PostConstruct annotation and destroy() method by @PreDestroy annotation**
+
+```java
+package beans;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+public class HelloWorld {
+
+	@PostConstruct
+	public void init() throws Exception
+	{
+		System.out.println(
+			"Bean HelloWorld has been "	+ "instantiated and I'm the " + "init() method");
+	}
+
+	@PreDestroy
+	public void destroy() throws Exception
+	{
+		System.out.println("Container has been closed " + "and I'm the destroy() method");
+	}
+}
+```
+
+`When you might need ConfigurableApplicationContext:   
+You would only need ConfigurableApplicationContext if you need to:
+Manually control the application context lifecycle
+Add/remove bean definitions at runtime
+Configure the context programmatically
+Access more advanced configuration options
+`
