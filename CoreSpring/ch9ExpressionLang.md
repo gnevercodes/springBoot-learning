@@ -25,3 +25,41 @@ main :
 2.  ExpressionParser (Interface)
     • This is the engine that takes your SpEL expression string and turns it into an Expression object.
     • It’s an interface, meaning you don’t directly use it—you use its implementation.
+3.  SpelExpressionParser (Class)
+    • This is the default implementation of ExpressionParser.
+    • It knows how to understand SpEL syntax like:
+4.  EvaluationContext (Interface)
+    • It provides context for evaluation.
+    • Like, where should the SpEL look for variables, beans, etc.?
+
+---
+
+```java
+import org.springframework.expression.ExpressionParser;
+import org.springframework.expression.spel.standard.SpelExpressionParser;
+import org.springframework.expression.Expression;
+import org.springframework.expression.spel.support.StandardEvaluationContext;
+
+public class SpELDemo {
+    public static void main(String[] args) {
+        Person person = new Person("Ganesh", 25);
+
+        ExpressionParser parser = new SpelExpressionParser();
+        StandardEvaluationContext context = new StandardEvaluationContext(person);
+
+        Expression exp = parser.parseExpression("name");
+        String name = exp.getValue(context, String.class); // → "Ganesh"
+
+        System.out.println("Person name is: " + name);
+    }
+}
+
+class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) { this.name = name; this.age = age; }
+    public String getName() { return name; }
+    public int getAge() { return age; }
+}
+```
