@@ -35,3 +35,6 @@ The key features of Spring Framework are listed below:
 - Spring Data: Spring Data is a part of the Spring Framework that simplifies database access by `providing easy-to-use abstractions for working with relational and non-relational databases.`
 - Spring Batch: Spring Batch is a framework in Spring for handling large-scale batch processing, such as reading, processing, and writing data in bulk.
 - Integration with Other Frameworks: Spring integrates seamlessly with other technologies like Hibernate, JPA, JMS, and more, making it versatile for various enterprise applications.
+
+- More content coming from Thelusko Learning
+- 
